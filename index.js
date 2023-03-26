@@ -9,6 +9,10 @@ const cors = require("cors");
 
 const app = express();
 
+app.use("/",(req,res)=>{
+    res.send("welcome")
+})
+
 require("dotenv").config();
 
 
